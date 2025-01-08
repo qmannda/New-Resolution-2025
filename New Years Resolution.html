@@ -4,7 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Years Resolution</title>
-    <link rel="stylesheet" href="style/styles.css" />
+    <style>
+      body {
+        background: linear-gradient(
+          -225deg,
+          #ff057c 0%,
+          #8d0b93 50%,
+          #321575 100%
+        );
+        font-family: sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      button {
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 8px 13px;
+        transition: all 150ms ease-in-out;
+        border: none;
+        background: #f0cfeb;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: #af67a4;
+        color: white;
+      }
+
+      .head {
+        position: fixed;
+        top: -1px;
+        left: 1px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: #a56cc1;
+        padding: 10px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: medium;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .indent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+      }
+
+      .myself {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+        width: 150px;
+        border-radius: 10px;
+      }
+
+      .display {
+        max-width: 100%;
+        width: 550px;
+        border-radius: 4px;
+      }
+
+      .display img {
+        width: 650px;
+        border-radius: 15px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .display img:hover {
+        transform: scale(1.2);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .grid a img {
+        width: 145px;
+        height: 100%;
+        border-radius: 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid a img:hover {
+        transform: scale(2);
+      }
+
+      .container {
+        margin: 100px auto;
+        margin-bottom: 20px;
+        max-width: 650px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .bottom {
+        margin: 0 auto;
+        max-width: 650px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      footer {
+        margin: 10px auto;
+        max-width: 650px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header class="head">
@@ -163,7 +284,9 @@
         /></a>
 
         <div class="grid">
-          <a href="https://www.virginactive.co.za/gym-classes/reformer-pilates"
+          <a
+            href="https://www.virginactive.co.za/gym-classes/reformer-pilates"
+            target="_blank"
             ><img
               src="https://media.istockphoto.com/id/1171254524/photo/woman-performing-a-pilates-diagonal-stabilisation.jpg?s=612x612&w=0&k=20&c=19oOy5iCwCu_MprtKShOIzNYSMtrPy1qk0zXjBszczU="
               alt="reformer"
@@ -184,7 +307,9 @@
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghnroFOo9HKOZcqcU-9jJ7B-YBwNuAUPaS2rCtl2Fj3SGcmssDZXYfI2gb8SYBf3QDqtENQuCzOMO9qAurkzpM_q991cFcfP84-YaShxvy4q6Ma5Rn7VanfrX7N5h9bz0X1uEp4BMO8HgWEoBTIPNx6tb9uQp1JFj-29jym5mgMakCbcwXpsRkKwqcF_U/s16000-rw/spicy-sausage-rice-image.jpg"
               alt="fun food"
           /></a>
-          <a href="https://www.calm.com/blog/how-to-journal-for-mental-health"
+          <a
+            href="https://www.calm.com/blog/how-to-journal-for-mental-health"
+            target="_blank"
             ><img
               src="https://cmscdn.classicglamping.co.uk/general%20images/journalling/scrapbook-journaling.jpg"
               alt="journelling"

@@ -15,6 +15,8 @@
       }
 
       button {
+        display: block;
+        margin: 0 auto;
         font-size: 15px;
         border-radius: 10px;
         padding: 8px 13px;
@@ -112,6 +114,31 @@
         text-align: center;
       }
 
+      .dark {
+        background: linear-gradient(
+          -225deg,
+          #ff057c 0%,
+          #8d0b93 50%,
+          #321575 100%
+        );
+        color: white;
+      }
+
+      .dark .container .bottom footer {
+        background: rgb(177, 169, 169);
+        color: white;
+      }
+
+      .dark .head {
+        background: #a56cc1;
+        color: white;
+      }
+
+      .dark button {
+        background: white;
+        color: black;
+      }
+
       footer {
         margin: 10px auto;
         max-width: 650px;
@@ -129,24 +156,19 @@
       <h2>
         2025 New Years Resolution
         <br />
-        <select name="" id="">
-          <option value="">Choose what to see..</option>
-          <option value="goals">Resolutions for 2025</option>
-          <option value="pictures">My future plans</option>
-          <option value="made">Who made this?</option>
-        </select>
       </h2>
       <div>Own race, own pace</div>
       <div>
         <a
           href="https://za.pinterest.com/manndaq/2025-visiongoals/"
           target="_blank"
-          ><button>See my vision</button></a
+          ><button class="vision">See my vision</button></a
         >
       </div>
     </header>
 
     <main class="container">
+      <button class="lights">Lights off</button>
       <h3>My New Years Resolution</h3>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/268/original/IMG_8498.jpeg.jpg?1736356160"
@@ -315,8 +337,27 @@
 
     <footer>
       This project was coded by and for
-      <a href="www.linkedin.com/in/mannda-qinisile">Mannda Qinisile</a> 💜💜 and
-      is open-sourced on <a href="">GitHub</a>
+      <a href="https://www.linkedin.com/in/mannda-qinisile/" target="_blank"
+        >Mannda Qinisile</a
+      >
+      💜💜 and is open-sourced on
+      <a href="https://github.com/qmannda/New-Resolution-2025" target="_blank"
+        >GitHub</a
+      >
     </footer>
+    <script>
+      function lightsOff() {
+        let page = document.querySelector("body");
+
+        if (page.classList.contains("dark")) {
+          page.classList.remove("dark");
+        } else {
+          page.classList.add("dark");
+        }
+      }
+
+      let lights = document.querySelector(".lights");
+      lights.addEventListener("click", lightsOff);
+    </script>
   </body>
 </html>
